@@ -11,7 +11,38 @@
 		E485397B2A70431700715D80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E485397A2A70431700715D80 /* ContentView.swift */; };
 		E485397D2A70431800715D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E485397C2A70431800715D80 /* Assets.xcassets */; };
 		E48539802A70431800715D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E485397F2A70431800715D80 /* Preview Assets.xcassets */; };
+		E485398E2A7044A000715D80 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E485398D2A7044A000715D80 /* WidgetKit.framework */; };
+		E48539902A7044A000715D80 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E485398F2A7044A000715D80 /* SwiftUI.framework */; };
+		E48539932A7044A000715D80 /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48539922A7044A000715D80 /* widget.swift */; };
+		E48539962A7044A100715D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48539952A7044A100715D80 /* Assets.xcassets */; };
+		E48539992A7044A100715D80 /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E48539942A7044A100715D80 /* widget.intentdefinition */; };
+		E485399A2A7044A100715D80 /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E48539942A7044A100715D80 /* widget.intentdefinition */; };
+		E485399D2A7044A100715D80 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E485398B2A7044A000715D80 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E485399B2A7044A100715D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E485396D2A70431700715D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E485398A2A7044A000715D80;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E485399E2A7044A100715D80 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E485399D2A7044A100715D80 /* widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E48539752A70431700715D80 /* invest-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "invest-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,14 @@
 		E485397C2A70431800715D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E485397F2A70431800715D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E48539812A70431800715D80 /* invest_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = invest_widget.entitlements; sourceTree = "<group>"; };
+		E485398B2A7044A000715D80 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E485398D2A7044A000715D80 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E485398F2A7044A000715D80 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E48539922A7044A000715D80 /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
+		E48539942A7044A100715D80 /* widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget.intentdefinition; sourceTree = "<group>"; };
+		E48539952A7044A100715D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E48539972A7044A100715D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48539982A7044A100715D80 /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E48539882A7044A000715D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48539902A7044A000715D80 /* SwiftUI.framework in Frameworks */,
+				E485398E2A7044A000715D80 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				E48539772A70431700715D80 /* invest-widget */,
+				E48539912A7044A000715D80 /* widget */,
+				E485398C2A7044A000715D80 /* Frameworks */,
 				E48539762A70431700715D80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E48539752A70431700715D80 /* invest-widget.app */,
+				E485398B2A7044A000715D80 /* widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +120,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E485398C2A7044A000715D80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E485398D2A7044A000715D80 /* WidgetKit.framework */,
+				E485398F2A7044A000715D80 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48539912A7044A000715D80 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				E48539922A7044A000715D80 /* widget.swift */,
+				E48539942A7044A100715D80 /* widget.intentdefinition */,
+				E48539952A7044A100715D80 /* Assets.xcassets */,
+				E48539972A7044A100715D80 /* Info.plist */,
+				E48539982A7044A100715D80 /* widget.entitlements */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +151,34 @@
 				E48539712A70431700715D80 /* Sources */,
 				E48539722A70431700715D80 /* Frameworks */,
 				E48539732A70431700715D80 /* Resources */,
+				E485399E2A7044A100715D80 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E485399C2A7044A100715D80 /* PBXTargetDependency */,
 			);
 			name = "invest-widget";
 			productName = "invest-widget";
 			productReference = E48539752A70431700715D80 /* invest-widget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E485398A2A7044A000715D80 /* widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48539A12A7044A100715D80 /* Build configuration list for PBXNativeTarget "widgetExtension" */;
+			buildPhases = (
+				E48539872A7044A000715D80 /* Sources */,
+				E48539882A7044A000715D80 /* Frameworks */,
+				E48539892A7044A000715D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetExtension;
+			productName = widgetExtension;
+			productReference = E485398B2A7044A000715D80 /* widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +191,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					E48539742A70431700715D80 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E485398A2A7044A000715D80 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -118,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				E48539742A70431700715D80 /* invest-widget */,
+				E485398A2A7044A000715D80 /* widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +227,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E48539892A7044A000715D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48539962A7044A100715D80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +242,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E485399A2A7044A100715D80 /* widget.intentdefinition in Sources */,
 				E485397B2A70431700715D80 /* ContentView.swift in Sources */,
 				E48539792A70431700715D80 /* invest_widgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E48539872A7044A000715D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48539992A7044A100715D80 /* widget.intentdefinition in Sources */,
+				E48539932A7044A000715D80 /* widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E485399C2A7044A100715D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E485398A2A7044A000715D80 /* widgetExtension */;
+			targetProxy = E485399B2A7044A100715D80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E48539822A70431800715D80 /* Debug */ = {
@@ -263,6 +384,7 @@
 		E48539852A70431800715D80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "invest-widget/invest_widget.entitlements";
@@ -290,6 +412,7 @@
 		E48539862A70431800715D80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "invest-widget/invest_widget.entitlements";
@@ -314,6 +437,64 @@
 			};
 			name = Release;
 		};
+		E485399F2A7044A100715D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2324NG6BVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "giantwhale.invest-widget.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E48539A02A7044A100715D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2324NG6BVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "giantwhale.invest-widget.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +512,15 @@
 			buildConfigurations = (
 				E48539852A70431800715D80 /* Debug */,
 				E48539862A70431800715D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48539A12A7044A100715D80 /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E485399F2A7044A100715D80 /* Debug */,
+				E48539A02A7044A100715D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
